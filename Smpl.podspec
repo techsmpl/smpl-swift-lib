@@ -31,7 +31,7 @@ TODO: You can integrate Smpl to your app with this library. You can use the docu
   s.ios.deployment_target = '13.0'
 
   #s.source_files = 'Smpl/Classes/**/*'
-  s.source_files = 'https://github.com/techsmpl/smpl-swift-lib/releases/download/smpl/Classes.zip'
+  s.source_files = 'http://github.com/techsmpl/smpl-swift-lib/releases/download/smpl/Classes.zip'
   
   # s.resource_bundles = {
   #   'Smpl' => ['Smpl/Assets/*.png']
