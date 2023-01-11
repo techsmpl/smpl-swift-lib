@@ -1,0 +1,6 @@
+framework module Smpl {
+  umbrella header "Smpl-umbrella.h"
+
+  export *
+  module * { export * }
+}
