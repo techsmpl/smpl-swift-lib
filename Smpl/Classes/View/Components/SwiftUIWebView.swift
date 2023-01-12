@@ -9,7 +9,6 @@ import Foundation;
 import WebKit;
 import UIKit;
 import SwiftUI;
-import WKWebViewJavascriptBridge;
 
 extension URL {
 	

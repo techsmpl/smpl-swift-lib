@@ -27,12 +27,6 @@
     ],
     "ReSwift": [
       "~> 6.1.0"
-    ],
-    "ExytePopupView": [
-      "~> 1.2"
-    ],
-    "WKWebViewJavascriptBridge": [
-      "~> 1.2.0"
     ]
   }
 }

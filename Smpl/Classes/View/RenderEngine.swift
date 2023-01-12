@@ -7,7 +7,6 @@
 
 import Foundation;
 import SwiftUI;
-import ExytePopupView;
 
 public struct RenderEmptyView: View {
 	public var body: some View {
@@ -27,21 +26,8 @@ public struct RenderEngine: View{
 				case "popup":
 					SheetPopupWebView(isPresented: .constant(mainStore.state.popupAwake), data: .constant(mainStore.state.views[0] as NSDictionary))
 					//SheetPopupView(isPresented: $showPopup, data: .constant(state.current.views[0] as NSDictionary))
-				case "default-popup":
-					EmptyView().popup(isPresented: $showPopup, type: .`default`, closeOnTap: true, backgroundColor: .black.opacity(0.4)) {
-						PopupView(
-							isPresented: $showPopup,
-							data: .constant(state.current.views[0] as NSDictionary)
-						)
-					}
 				default:
-					EmptyView().popup(isPresented: .constant(false), type: .`default`, closeOnTap: false, backgroundColor: .black.opacity(0.4)) {
-						PopupView(
-							isPresented: .constant(false),
-							data: .constant(state.current.views[0] as NSDictionary)
-						)
-					}
-			}
+					EmptyView()			}
 			
 		}
 	}
