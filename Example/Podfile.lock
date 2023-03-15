@@ -114,13 +114,13 @@ PODS:
     - Nimble
   - PromisesObjC (2.2.0)
   - Quick (2.2.1)
-  - ReSwift (6.1.0)
-  - Smpl (0.1.3):
+  - ReSwift (6.1.1)
+  - Smpl (0.1.4):
     - Alamofire (~> 5.6.3)
     - Firebase (~> 10.6.0)
     - Firebase/Core (~> 10.6.0)
     - Firebase/Messaging (~> 10.6.0)
-    - ReSwift (~> 6.1.0)
+    - ReSwift (~> 6.1.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -172,8 +172,8 @@ SPEC CHECKSUMS:
   Nimble-Snapshots: ef281b908c604f78c8313587e25ea92c8ab513d7
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
-  ReSwift: eab3c01e4279ba81b54a61e4fd6499634d20123a
-  Smpl: 64c549a8bc1611dc5a2a51aa2270d0c3c49f251a
+  ReSwift: 929afd2c897f0d33c76c730710a31bb2d2a66713
+  Smpl: 177a4a5b94cdac50b86fafcaf5748448e17adc05
 
 PODFILE CHECKSUM: 9eac3d01e776540fae18785fb567dd7e799d7d52
 

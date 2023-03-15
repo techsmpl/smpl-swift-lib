@@ -10,7 +10,7 @@
  This class is the default implementation of the `StoreType` protocol. You will use this store in most
  of your applications. You shouldn't need to implement your own store.
  You initialize the store with a reducer and an initial application state. If your app has multiple
- reducers you can combine them by initializng a `MainReducer` with all of your reducers as an
+ reducers you can combine them by initializing a `MainReducer` with all of your reducers as an
  argument.
  */
 open class Store<State>: StoreType {
@@ -217,7 +217,7 @@ open class Store<State>: StoreType {
 // MARK: Skip Repeats for Equatable States
 
 extension Store {
-    open func subscribe<SelectedState: Equatable, S: StoreSubscriber>(
+    public func subscribe<SelectedState: Equatable, S: StoreSubscriber>(
         _ subscriber: S, transform: ((Subscription<State>) -> Subscription<SelectedState>)?
         ) where S.StoreSubscriberStateType == SelectedState
     {
@@ -233,7 +233,7 @@ extension Store {
 }
 
 extension Store where State: Equatable {
-    open func subscribe<S: StoreSubscriber>(_ subscriber: S)
+	public func subscribe<S: StoreSubscriber>(_ subscriber: S)
         where S.StoreSubscriberStateType == State {
             guard subscriptionsAutomaticallySkipRepeats else {
                 subscribe(subscriber, transform: nil)

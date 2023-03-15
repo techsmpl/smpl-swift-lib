@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Smpl'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Smpl is an omnichannel marketing automation tool'
 
 # This description is used to generate tags and improve search results.
@@ -42,7 +42,7 @@ TODO: You can integrate Smpl to your app with this library. You can use the docu
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'Alamofire', '~> 5.6.3'
   s.dependency 'Alamofire', '~> 5.6.3'
-  s.dependency 'ReSwift', '~> 6.1.0'
+  s.dependency 'ReSwift', '~> 6.1.1'
 	s.dependency 'Firebase', '~>10.6.0'
 	s.dependency 'Firebase/Core', '~>10.6.0'
 	s.dependency 'Firebase/Messaging', '~>10.6.0'
