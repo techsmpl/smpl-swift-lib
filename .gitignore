@@ -34,4 +34,7 @@ Carthage/Build
 # `pod install` in .travis.yml
 #
 # Pods/
+
+Pods/
 node_modules/
+Example/Smpl/GoogleService-Info.plist

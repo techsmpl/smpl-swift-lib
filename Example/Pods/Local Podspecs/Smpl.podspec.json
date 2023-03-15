@@ -27,6 +27,15 @@
     ],
     "ReSwift": [
       "~> 6.1.0"
+    ],
+    "Firebase": [
+      "~>10.6.0"
+    ],
+    "Firebase/Core": [
+      "~>10.6.0"
+    ],
+    "Firebase/Messaging": [
+      "~>10.6.0"
     ]
   }
 }

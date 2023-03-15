@@ -8,15 +8,18 @@
 
 import UIKit;
 import Smpl;
+import FirebaseCore;
+import FirebaseMessaging;
+import UserNotifications;
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+class AppDelegate:SmplMessaging  {
+	var window: UIWindow?;
+	let smplMessaging = SmplMessaging();
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+		application.registerForRemoteNotifications();
+		smplMessaging.enableMessaging();
 		defer{
 			Task{
 				@MainActor in runSmpl(
@@ -27,6 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					],
 					user: nil
 				)
+				smplMessaging.configure();
+				smplMessaging.getToken{ token in
+					print("Delegate Level Token:::",token)
+				}
+				//print("Delegate Level Token::", fcmToken)
+				//smplMessaging.registerForRemoteNotifications(application: application);
 			}
 		}
 		return true

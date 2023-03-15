@@ -43,4 +43,7 @@ TODO: You can integrate Smpl to your app with this library. You can use the docu
   # s.dependency 'Alamofire', '~> 5.6.3'
   s.dependency 'Alamofire', '~> 5.6.3'
   s.dependency 'ReSwift', '~> 6.1.0'
+	s.dependency 'Firebase', '~>10.6.0'
+	s.dependency 'Firebase/Core', '~>10.6.0'
+	s.dependency 'Firebase/Messaging', '~>10.6.0'
 end

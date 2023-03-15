@@ -56,10 +56,12 @@ func viewsReducer(action: Action, state: AppState?) -> AppState {
 			if(state.views.count > 0){
 				state.popupAwake = true;
 				Task{
-					await createScenarioTracking(parameters:[
-						"scenarioId": mainStore.state.views[0]["scenarioId"]!,
-						"deviceUid": mainStore.state.deviceUid!
-					])
+					if(mainStore.state.views.indices.contains(0)){
+						await createScenarioTracking(parameters:[
+							"scenarioId": mainStore.state.views[0]["scenarioId"]!,
+							"deviceUid": mainStore.state.deviceUid!
+						])
+					}
 				}
 			}
 			//print(state.views)

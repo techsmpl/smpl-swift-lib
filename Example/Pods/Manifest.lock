@@ -5,21 +5,121 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - Firebase (10.6.0):
+    - Firebase/Core (= 10.6.0)
+  - Firebase/Core (10.6.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (~> 10.6.0)
+  - Firebase/CoreOnly (10.6.0):
+    - FirebaseCore (= 10.6.0)
+  - Firebase/Messaging (10.6.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 10.6.0)
+  - FirebaseAnalytics (10.6.0):
+    - FirebaseAnalytics/AdIdSupport (= 10.6.0)
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseAnalytics/AdIdSupport (10.6.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleAppMeasurement (= 10.6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseCore (10.6.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Logger (~> 7.8)
+  - FirebaseCoreInternal (10.6.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseInstallations (10.6.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
+  - FirebaseMessaging (10.6.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleDataTransport (~> 9.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Reachability (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement (10.6.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.6.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.6.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleDataTransport (9.2.1):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.11.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.11.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.11.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.0)"
+  - GoogleUtilities/Reachability (7.11.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.11.0):
+    - GoogleUtilities/Logger
   - iOSSnapshotTestCase (8.0.0):
     - iOSSnapshotTestCase/SwiftSupport (= 8.0.0)
   - iOSSnapshotTestCase/Core (8.0.0)
   - iOSSnapshotTestCase/SwiftSupport (8.0.0):
     - iOSSnapshotTestCase/Core
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
   - Nimble (10.0.0)
   - Nimble-Snapshots (9.4.0):
     - Nimble-Snapshots/Core (= 9.4.0)
   - Nimble-Snapshots/Core (9.4.0):
     - iOSSnapshotTestCase (~> 8.0)
     - Nimble
+  - PromisesObjC (2.2.0)
   - Quick (2.2.1)
   - ReSwift (6.1.0)
   - Smpl (0.1.3):
     - Alamofire (~> 5.6.3)
+    - Firebase (~> 10.6.0)
+    - Firebase/Core (~> 10.6.0)
+    - Firebase/Messaging (~> 10.6.0)
     - ReSwift (~> 6.1.0)
 
 DEPENDENCIES:
@@ -33,9 +133,20 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - FBSnapshotTestCase
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - FirebaseInstallations
+    - FirebaseMessaging
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleUtilities
     - iOSSnapshotTestCase
+    - nanopb
     - Nimble
     - Nimble-Snapshots
+    - PromisesObjC
     - Quick
     - ReSwift
 
@@ -46,13 +157,24 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Firebase: f13680471b021937f2230ea8503c7809d8c29806
+  FirebaseAnalytics: 9f382605c5ee412b039212f054bf7a403d9850c1
+  FirebaseCore: fa80ad16a62d52f67274b5b88304c3a318bbf9a4
+  FirebaseCoreInternal: c7cd505e2136811096b225ac388d6254a2622362
+  FirebaseInstallations: 13dde135fa0524e15bddb133ccc8465c53a1b3f3
+  FirebaseMessaging: fd93783258c53ae5cdb9b41bf0c51606a677f2d5
+  GoogleAppMeasurement: 686b48c3c895f3c55c70719041913d5d150b74f6
+  GoogleDataTransport: ea169759df570f4e37bdee1623ec32a7e64e67c4
+  GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
   iOSSnapshotTestCase: a670511f9ee3829c2b9c23e6e68f315fd7b6790f
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   Nimble-Snapshots: ef281b908c604f78c8313587e25ea92c8ab513d7
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
   ReSwift: eab3c01e4279ba81b54a61e4fd6499634d20123a
-  Smpl: ef1dc638f225bba1eea5a8785227962ef02b5c44
+  Smpl: 64c549a8bc1611dc5a2a51aa2270d0c3c49f251a
 
 PODFILE CHECKSUM: 9eac3d01e776540fae18785fb567dd7e799d7d52
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0

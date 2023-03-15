@@ -34,9 +34,11 @@ struct AppState {
 	public var fetchingSceneraios: Bool = false;
 	public var fetchedScenarios: Bool = false;
 	public var user: Parameters? = nil;
+	public var messagingEnabled: Bool = false;
+	public var messagingToken: String? = nil;
 }
 
 let mainStore = Store<AppState>(
-    reducer: combineReducers(counterReducer, viewsReducer, scenariosReducer, userDeviceInformationsReducer),
+    reducer: combineReducers(counterReducer, viewsReducer, scenariosReducer, userDeviceInformationsReducer, messagingReducer),
 	state: nil
 );

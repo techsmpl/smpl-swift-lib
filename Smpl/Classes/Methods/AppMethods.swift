@@ -92,7 +92,9 @@ private func runScenarios(eventKey:String, params:Parameters)async {
 		headers.add(name:"x-api-key",value: mainStore.state.apiKey!);
 		headers.add(name:"appId", value: mainStore.state.appId!);
 		//headers.add(name: "deviceId", value: deviceId);
-		headers.add(name: "deviceUid", value: mainStore.state.deviceUid! ?? "");
+		if(mainStore.state.deviceUid != nil){
+			headers.add(name: "deviceUid", value: mainStore.state.deviceUid!);
+		}
 		headers.add(name: "eventkey", value: eventKey)
 		//logger(headers);
 		let response = await SmplApi.post(path: "/scenario-run", params: params, headers:headers);
